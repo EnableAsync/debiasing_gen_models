@@ -206,7 +206,8 @@ class Asyrp(object):
 
         # print(x.shape)
         for image_index, image_tosave in enumerate(x):
-            tvu.save_image(image_tosave, os.path.join(folder_dir, f'{file_name}_{image_index}_ngen{self.args.n_train_step}.png'), normalization=True)
+            # tvu.save_image(image_tosave, os.path.join(folder_dir, f'{file_name}_{image_index}_ngen{self.args.n_train_step}.png'), normalization=True)
+            tvu.save_image(image_tosave, os.path.join(folder_dir, f'{file_name}_{image_index}_ngen{self.args.n_train_step}.png'))
           
           
     # test
